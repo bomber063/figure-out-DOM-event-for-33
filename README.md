@@ -73,7 +73,7 @@ flex 属性可以指定1个，2个或3个值。
 ## 当都设置为false的时候
 * 增加类和移除类在延迟函数(setTimeout)里面**都只有冒泡阶段执行**。也就是都是**false**。说明从**内层逐步到外层，从子元素到父元素**。
 * 同时在同一个DIV绑定两个事件，增加类和移除类，并且增加类的代码在移除类的前面，那么就从**内**部该层**先变色**，然后**移除该层的颜色**，逐步到**外层**。
-* jsbin代码[链接](http://js.jirengu.com/kicesemote/1/edit?html,css,js,output)
+* jsbin代码[链接](http://js.jirengu.com/sucuxebare/1/edit?html,css,js,output)
 
 ## 当前面的增加类为false，后面的移除类为true的时候
 * 增加类在延迟函数(setTimeout)里面是**冒泡阶段执行**,移除类在延迟函数(setTimeout)里面**捕获阶段执行**。DOM事件模型都是**先捕获在冒泡**。
